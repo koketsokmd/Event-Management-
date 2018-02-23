@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "HomeLogin";
+}
+<link href="~/Content/MyCss/MyButtons.css" rel="stylesheet" />
+
+@*<nav class="navbar navbar-expand-sm navbar-default navbar-default fixed-top">
+    <a class="navbar-brand" href="#">Calender_App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active nav-link"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i> @Html.ActionLink("Administrator", "Index", "Home")</li>
+                <li class="nav-item active nav-link"><i class="fa fa-users fa-lg" aria-hidden="true"></i> @Html.ActionLink("Level 4 Group 1", "Group1", "Home")</li>
+                <li class="nav-item active nav-link"><i class="fa fa-users fa-lg" aria-hidden="true"></i> @Html.ActionLink("Level 4 Group 2", "Group2", "Home")</li>
+                <li class="nav-item active nav-link"><i class="fa fa-users fa-lg" aria-hidden="true"></i> @Html.ActionLink("Level 4 Group 3", "Group3", "Home")</li>
+
+        </ul>
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                Welcome To Event Management App
+            </li>
+        </ul>
+    </div>
+</nav>*@
+
+<br /><br />
+
+<center>
+    @*<img src="~/Content/images/loinlogo.png" />*@
+    <img src="~/Content/images/loginlogo.png" />
+    <br /><br />
+    <button class="login2" onclick="location.href='@Url.Action("Login", "AdminLogin")'"><i class="fa fa-lock fa-lg" aria-hidden="true"></i> Admin Login</button><br />
+
+    <button class="login" onclick="location.href='@Url.Action("Login", "Account")'"><i class="fa fa-lock fa-lg" aria-hidden="true"></i> Mentor's Login</button><br />
+
+    <button class="login" onclick="location.href='@Url.Action("StudentLogin", "StudentLogin")'"><i class="fa fa-lock fa-lg" aria-hidden="true"></i> Students Login</button>
+
+</center>
+
+
+

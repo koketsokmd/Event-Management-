@@ -1,0 +1,66 @@
+﻿@model MVCEventCalendar.Models.Students
+
+@{
+    Layout = null;
+}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>EMS Login</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Meta tag Keywords -->
+    <!-- css files -->
+    <link href="~/Content/MyCss/loginsytle.css" rel="stylesheet" media="all" /><!-- Style-CSS -->
+    <link href="~/Content/MyCss/font-awesome.css" rel="stylesheet" /> <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+
+    <!-- //css files -->
+</head>
+<body>
+    <!-- main -->
+    <div class="w3ls-header">
+        <br />
+        <div class="header-main">
+            <h2>login as a <a href="#">Student</a> <span>Using</span> Your <a href="#">Email account</a></h2>
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-danger" style="color:#ff0000">@ViewBag.Message</div>
+            }
+            <div class="header-bottom">
+                <div class="header-right w3agile">
+                    <div class="header-left-bottom agileinfo">
+                        <form action="/StudentLogin/StudentLogin" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="V3odsN-qrAQKZaui-fb3WmNLcKoYLicozOcr6MoCuQ4oG5yznBnYKcNUw_5aWjsLhl9Th_j-3s8WPTYG2c7dVTzMaP7L458q7lTwNyjQ6HY1" />        <div class="form-horizontal">
+
+                                <div class="icon1">
+                                    <input id="Username" name="Username" type="email" placeholder="Email Address" value="" required="" />
+                                </div>
+                                <div class="icon1">
+                                    <input type="password" placeholder="Password" id="Password" name="Password" value="" required="" />
+                                </div>
+                                <div class="login-check">
+                                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i> Keep me logged in</label>
+                                </div>
+                                <div class="bottom">
+                                    <input type="submit" value="Log in" />
+                                    <br />
+                                    <a href="/">Back</a>
+                                </div>
+                                <p><a href="#">Forgot password?</a></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br />
+</body>
+</html>
+

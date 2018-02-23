@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="OurDbContext-Web.config Connection String" description="OurDbContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=197.189.255.211;Initial Catalog=ddnappst_TimetableDB;User ID=ddnappst_Admin;Password=Admin123!@#" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kmoseamedi\\Desktop\\Event\ Management\ System\\MVCEventCalendar\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OurDbContext']/@connectionString" />
+  </parameter>
+</parameters>
